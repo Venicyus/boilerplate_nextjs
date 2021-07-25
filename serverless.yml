@@ -1,0 +1,15 @@
+project:
+  component: "@sls-next/serverless-component@3.1.0"
+  inputs:
+    runtime: "nodejs14.x"
+    bucketName: "foo-bucket-name"
+    # domain: "foo.com"
+    # publicDirectoryCache: false
+    name:
+      defaultLambda: "fooDefaultLambda"
+      apiLambda: "fooApiLambda"
+      imageLambda: "fooImageLambda"
+    timeout:
+      defaultLambda: 20
+      apiLambda: 15
+      imageLambda: 15

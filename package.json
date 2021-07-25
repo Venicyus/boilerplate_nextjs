@@ -1,16 +1,16 @@
 {
   "name": "boilerplate_nextjs",
+  "author": "Venicyus Paz",
   "version": "1.0.0",
-  "author": "Squad HUB",
   "license": "MIT",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "deploy": "serverless --debug"
   },
   "dependencies": {
     "next": "^11.0.1",
