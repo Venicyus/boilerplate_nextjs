@@ -1,10 +1,9 @@
 {
   "name": "boilerplate_nextjs",
+  "author": "Venicyus Paz",
   "version": "1.0.0",
-  "author": "Squad HUB",
   "license": "MIT",
   "private": true,
-  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

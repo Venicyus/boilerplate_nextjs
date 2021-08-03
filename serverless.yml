@@ -1,0 +1,17 @@
+project:
+  component: "@sls-next/serverless-component@3.2.0"
+  inputs:
+    runtime: "nodejs14.x"
+    region: us-east-1
+    bucketName: "foo-bucket-name"
+    # domain: "foo.com"
+    # cloudfront:
+    #   distributionId: E288PSTUX479TB 
+    name:
+      defaultLambda: "fooDefaultLambda"
+      apiLambda: "fooApiLambda"
+      imageLambda: "fooImageLambda"
+    timeout:
+      defaultLambda: 20
+      apiLambda: 15
+      imageLambda: 15
