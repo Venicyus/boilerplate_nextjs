@@ -9,8 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "type-check": "tsc",
-    "deploy": "serverless --debug"
+    "type-check": "tsc"
   },
   "dependencies": {
     "next": "^11.0.1",
