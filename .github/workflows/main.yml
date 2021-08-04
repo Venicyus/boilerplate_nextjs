@@ -23,10 +23,10 @@ jobs:
         cache: 'yarn'
     - run: npm install npm@7.19.1 -g
     - run: npm install serverless@2.52.1 -g
-    - run: apt update
     - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
     - run: unzip awscliv2.zip
     - run: ./aws/install
+    - run: aws --version
     - run: node -v
     - run: npm -v
     - run: yarn -v
