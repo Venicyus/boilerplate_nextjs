@@ -6,7 +6,7 @@ const HomePage = (): ReactElement => {
   return (
     <>
       <Head>
-        <title>Nextjs</title>
+        <title>Hello Nextjs</title>
       </Head>
 
       <LayoutComponent />
