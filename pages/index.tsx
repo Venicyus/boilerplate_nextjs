@@ -1,16 +1,11 @@
-import { ReactElement } from 'react'
-import Head from 'next/head'
 import LayoutComponent from '@app/components/Layout'
+import { NextPage } from 'next'
 
-const HomePage = (): ReactElement => {
+const HomePage: NextPage = () => {
   return (
-    <>
-      <Head>
-        <title>Nextjs</title>
-      </Head>
-
-      <LayoutComponent />
-    </>
+    <LayoutComponent>
+      <span>Hello Nextjs 12</span>
+    </LayoutComponent>
   )
 }
 

@@ -1,10 +1,10 @@
 import { ReactElement } from 'react'
-import { AppProps } from 'next/app'
+import type { AppProps } from 'next/app'
 
-import 'tailwindcss/tailwind.css'
+import '../src/styles/globals.css'
 
-const App = ({ Component, pageProps }: AppProps): ReactElement => {
+const MyApp = ({ Component, pageProps }: AppProps): ReactElement => {
   return <Component {...pageProps} />
 }
 
-export default App
+export default MyApp

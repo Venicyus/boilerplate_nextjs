@@ -1,8 +1,10 @@
 # Ignore artifacts:
 build
 coverage
-
-# Ignore .yml
 *.yml
 *.lock
 *.md
+.next
+.serverless
+.serverless_nextjs
+.husky
