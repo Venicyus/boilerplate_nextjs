@@ -4,7 +4,7 @@ import { useRouter } from 'next/dist/client/router'
 import LayoutComponent from '@app/components/Layout'
 import TimeComponent from '@app/components/Time'
 
-const HomePage: NextPage = () => {
+const TestPage: NextPage = () => {
   const router = useRouter()
 
   return (
@@ -18,7 +18,7 @@ const HomePage: NextPage = () => {
         }}
       >
         <div>Home Page</div>
-        <button onClick={() => router.push('/test')}>Ir para page test</button>
+        <button onClick={() => router.push('/')}>Ir para page Home</button>
 
         <div style={{ display: 'flex' }}>
           <TimeComponent />
@@ -29,4 +29,4 @@ const HomePage: NextPage = () => {
   )
 }
 
-export default HomePage
+export default TestPage
