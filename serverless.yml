@@ -6,7 +6,7 @@ project:
     bucketName: "foo-bucket-name"
     # domain: "foo.com"
     # cloudfront:
-    #   distributionId: E288PSTUX479TB 
+    #   distributionId: ?? 
     name:
       defaultLambda: "fooDefaultLambda"
       apiLambda: "fooApiLambda"
