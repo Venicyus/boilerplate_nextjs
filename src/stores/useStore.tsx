@@ -1,8 +1,8 @@
-import { createContext, ReactNode, useContext } from 'react'
-import useTime, { TimeStore } from './useTimeStore'
+import { Context, createContext, ReactNode, useContext } from 'react'
+import useAppStore, { AppStore } from './useAppStore'
 
 interface Store {
-  time: TimeStore
+  appStore: AppStore
 }
 
 const Context = createContext<Store>(null)
@@ -12,9 +12,9 @@ type Props = {
 }
 
 export const AppProvider = ({ children }: Props) => {
-  const time = useTime()
+  const appStore = useAppStore()
 
-  return <Context.Provider value={{ time }}>{children}</Context.Provider>
+  return <Context.Provider value={{ appStore }}>{children}</Context.Provider>
 }
 
 export const useStore = (): Store => useContext(Context)

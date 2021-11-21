@@ -2,26 +2,28 @@
   "name": "boilerplate_nextjs",
   "version": "1.0.0",
   "repository": "git@github.com:Venicyus/boilerplate_nextjs.git",
-  "author": "Venicyus Paz <venicyus.paz@mobly.com.br>",
+  "author": "Venicyus Paz",
   "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix"
+    "lint": "next lint --fix",
+    "aws:credentials:config": "aws configure --profile $PROFILE set aws_access_key_id $AWS_ACCESS_KEY_ID && aws configure --profile $PROFILE set aws_secret_access_key $AWS_SECRET_ACCESS_KEY"
   },
   "dependencies": {
-    "next": "12.0.3",
+    "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "@types/node": "^16.11.6",
-    "@types/react": "^17.0.34",
+    "@types/node": "^16.11.9",
+    "@types/react": "^17.0.36",
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.3.0",
     "@typescript-eslint/parser": "^5.3.0",
+    "autoprefixer": "^10.4.0",
     "eslint": "7.32.0",
     "eslint-config-next": "^12.0.3",
     "eslint-config-prettier": "^8.3.0",
@@ -32,7 +34,9 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^8.3.11",
     "prettier": "^2.4.1",
-    "typescript": "^4.4.4"
+    "tailwindcss": "^2.2.19",
+    "typescript": "4.4.4"
   }
 }

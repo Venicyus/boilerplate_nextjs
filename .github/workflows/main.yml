@@ -1,0 +1,36 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+        cache: 'yarn'
+    - run: npm install npm@7.19.1 -g
+    - run: npm install serverless@2.52.1 -g
+    - run: curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64-2.0.30.zip" -o "awscliv2.zip"
+    - run: unzip awscliv2.zip
+    - run: sudo ./aws/install
+    - run: aws --version
+    - run: node -v
+    - run: npm -v
+    - run: yarn -v
+    - run: yarn
+    - run: export PROFILE=default
+    - run: yarn aws:credentials:config
+    - run: sls --debug

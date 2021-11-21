@@ -1,5 +1,6 @@
 html,
 body {
+<<<<<<< HEAD
   padding: 0;
   margin: 0;
 }
@@ -15,4 +16,7 @@ button {
 
 * {
   box-sizing: border-box;
+=======
+  user-select: none;
+>>>>>>> develop
 }
